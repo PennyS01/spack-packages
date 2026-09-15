@@ -33,7 +33,7 @@ class Mafft(Package):
         sha256="e32e9d14f580e1b227f4457c5b6b7312f9eadbead10a03ba22c658ac66659b9f",
         when="@7.525:%gcc@15",
     )
-    
+
     def install(self, spec, prefix):
         with working_dir("core"):
             make("PREFIX=%s" % prefix)
